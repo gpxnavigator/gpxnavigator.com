@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zásady ochrany osobních údajů — GPX Navigator</title>
+<meta name="description" content="Jak GPX Navigator nakládá s tvými údaji: žádný účet, žádný server a co reklamy Google AdMob vidí a co ne.">
+<link rel="canonical" href="https://gpxnavigator.com/cs/privacy/">
+  <link rel="alternate" hreflang="nl" href="https://gpxnavigator.com/nl/privacy/">
+  <link rel="alternate" hreflang="en" href="https://gpxnavigator.com/en/privacy/">
+  <link rel="alternate" hreflang="de" href="https://gpxnavigator.com/de/privacy/">
+  <link rel="alternate" hreflang="fr" href="https://gpxnavigator.com/fr/privacy/">
+  <link rel="alternate" hreflang="es" href="https://gpxnavigator.com/es/privacy/">
+  <link rel="alternate" hreflang="it" href="https://gpxnavigator.com/it/privacy/">
+  <link rel="alternate" hreflang="pt" href="https://gpxnavigator.com/pt/privacy/">
+  <link rel="alternate" hreflang="sv" href="https://gpxnavigator.com/sv/privacy/">
+  <link rel="alternate" hreflang="nb" href="https://gpxnavigator.com/nb/privacy/">
+  <link rel="alternate" hreflang="fi" href="https://gpxnavigator.com/fi/privacy/">
+  <link rel="alternate" hreflang="cs" href="https://gpxnavigator.com/cs/privacy/">
+  <link rel="alternate" hreflang="da" href="https://gpxnavigator.com/da/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://gpxnavigator.com/nl/privacy/">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="logo-light" viewBox="0 0 100 100">
+      <rect width="100" height="100" fill="#FFFFFF"/>
+      <text x="50" y="52" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-weight="700" font-size="30" letter-spacing="-1" fill="#1C4480">GPX</text>
+      <path d="M18 72 C32 72 30 62 44 62 C58 62 60 70 76 70" fill="none" stroke="#1C4480" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="18" cy="72" r="6" fill="#1C4480"/>
+      <path d="M76 56 C82.6 56 87 60.8 87 66 C87 72.6 79.4 79.6 76 83 C72.6 79.6 65 72.6 65 66 C65 60.8 69.4 56 76 56 Z" fill="#E8A33D"/>
+      <circle cx="76" cy="66" r="4" fill="#FFFFFF"/>
+    </symbol>
+    <symbol id="mark-white" viewBox="0 0 100 44">
+      <path d="M8 30 C26 30 23 16 41 16 C59 16 62 26 82 26" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="8" cy="30" r="7" fill="#FFFFFF"/>
+      <path d="M82 6 C90.8 6 96 12.4 96 19.6 C96 28.4 86.4 37.8 82 42 C77.6 37.8 68 28.4 68 19.6 C68 12.4 73.2 6 82 6 Z" fill="#E8A33D"/>
+      <circle cx="82" cy="20" r="5" fill="#1A2332"/>
+    </symbol>
+  </defs>
+</svg>
+<nav class="site-nav">
+  <div class="site-nav__inner">
+    <a href="/cs/" class="brand">
+      <span class="brand__mark"><svg width="32" height="32"><use href="#logo-light"></use></svg></span>
+      <span class="brand__name">GPX Navigator</span>
+    </a>
+<div class="nav-spacer"></div>
+    <div class="lang-switch">
+      <button type="button" class="lang-switch__btn" aria-haspopup="listbox">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20"/></svg>
+        <span class="lang-switch__label">Čeština</span>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="lang-switch__menu" role="listbox">
+      <a class="lang-switch__item" href="/nl/privacy/">
+        <span class="lang-switch__item-code">nl</span>
+        <span class="lang-switch__item-name">Nederlands</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/en/privacy/">
+        <span class="lang-switch__item-code">en</span>
+        <span class="lang-switch__item-name">English</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/de/privacy/">
+        <span class="lang-switch__item-code">de</span>
+        <span class="lang-switch__item-name">Deutsch</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/fr/privacy/">
+        <span class="lang-switch__item-code">fr</span>
+        <span class="lang-switch__item-name">Français</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/es/privacy/">
+        <span class="lang-switch__item-code">es</span>
+        <span class="lang-switch__item-name">Español</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/it/privacy/">
+        <span class="lang-switch__item-code">it</span>
+        <span class="lang-switch__item-name">Italiano</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/pt/privacy/">
+        <span class="lang-switch__item-code">pt</span>
+        <span class="lang-switch__item-name">Português</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/sv/privacy/">
+        <span class="lang-switch__item-code">sv</span>
+        <span class="lang-switch__item-name">Svenska</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/nb/privacy/">
+        <span class="lang-switch__item-code">nb</span>
+        <span class="lang-switch__item-name">Norsk</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/fi/privacy/">
+        <span class="lang-switch__item-code">fi</span>
+        <span class="lang-switch__item-name">Suomi</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/cs/privacy/" aria-current="true">
+        <span class="lang-switch__item-code">cs</span>
+        <span class="lang-switch__item-name">Čeština</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1C4480" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      </a>
+      <a class="lang-switch__item" href="/da/privacy/">
+        <span class="lang-switch__item-code">da</span>
+        <span class="lang-switch__item-name">Dansk</span>
+        
+      </a>
+      </div>
+    </div>
+    <a href="/cs/" class="store-badge nav-back"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg><span class="nav-back__label">Zpět do aplikace</span></a>
+
+  </div>
+
+</nav>
+
+<header class="legal-header">
+  <div class="wrap wrap--narrow">
+    <span class="eyebrow-pill" style="margin-bottom:18px;display:inline-flex">Právní informace</span>
+    <h1>Zásady ochrany osobních údajů</h1>
+    <p>GPX Navigator funguje bez účtu a bez vlastního serveru. Tvoje trasy a tvoje poloha zůstávají v tvém zařízení. Abychom aplikaci udrželi zdarma, občas zobrazíme reklamu přes Google AdMob; níže najdeš přesně, co to znamená — a co se neděje.</p>
+    <div class="legal-meta">
+        <span>Verze 1.1</span>
+        <span>Poslední aktualizace: 8. září 2026</span>
+        <span>Platí pro iOS a Android</span>
+    </div>
+  </div>
+</header>
+
+<div class="legal-body">
+  <div class="summary-card">
+    <div class="summary-card__title">Shrnutí</div>
+    <div class="summary-grid">
+        <div class="summary-item">
+          <span class="summary-item__mark summary-item__mark--good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <div class="summary-item__text">Žádný účet, žádné přihlašování, žádný profil</div>
+        </div>
+        <div class="summary-item">
+          <span class="summary-item__mark summary-item__mark--good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <div class="summary-item__text">Tvoje poloha a tvoje trasy zůstávají v tvém zařízení</div>
+        </div>
+        <div class="summary-item">
+          <span class="summary-item__mark summary-item__mark--good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <div class="summary-item__text">Poloha a trasy se nikdy nepoužívají pro reklamy</div>
+        </div>
+        <div class="summary-item">
+          <span class="summary-item__mark summary-item__mark--warn">!</span>
+          <div class="summary-item__text">Občasná reklama od Google AdMob — v EU až po tvé volbě</div>
+        </div>
+        <div class="summary-item">
+          <span class="summary-item__mark summary-item__mark--good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <div class="summary-item__text">Bez reklam za jednorázových 2,99 €: aplikace pak už nenačítá žádný reklamní kód</div>
+        </div>
+        <div class="summary-item">
+          <span class="summary-item__mark summary-item__mark--good"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <div class="summary-item__text">Žádné analytické SDK, žádné A/B nástroje, žádné přihlašování přes sociální sítě</div>
+        </div>
+    </div>
+    <div class="summary-card__footnote">Tento box je shrnutí pro rychlé přečtení. Závazný je úplný text níže.</div>
+  </div>
+
+  <div class="toc-card">
+    <div class="toc-card__title">Na této stránce</div>
+    <ol class="toc-list">
+        <li><a href="#verwerker">Kdo zpracovává tvoje údaje</a></li>
+        <li><a href="#gegevens">Jaké údaje aplikace používá</a></li>
+        <li><a href="#locatie">Přístup k poloze</a></li>
+        <li><a href="#advertenties">Reklamy přes Google AdMob</a></li>
+        <li><a href="#toestemming">Souhlas v EU a změna tvé volby</a></li>
+        <li><a href="#advertentievrij">Nákup verze bez reklam</a></li>
+        <li><a href="#kaarten">Mapy a další třetí strany</a></li>
+        <li><a href="#winkels">App Store a Google Play</a></li>
+        <li><a href="#grondslag">Právní základ a doba uchovávání</a></li>
+        <li><a href="#rechten">Tvoje práva podle GDPR</a></li>
+        <li><a href="#beveiliging">Zabezpečení</a></li>
+        <li><a href="#kinderen">Děti</a></li>
+        <li><a href="#wijzigingen">Změny</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+    </ol>
+  </div>
+
+      <section class="legal-section" id="verwerker">
+        <h2>1. Kdo zpracovává tvoje údaje</h2>
+        <p>GPX Navigator vydává společnost GPX Navigator, dostupná přes <a href="https://gpxnavigator.com" target="_blank" rel="noopener">gpxnavigator.com</a> (dále jen „my“). Pro údaje zpracovávané v aplikaci a kolem ní jsme správcem údajů ve smyslu obecného nařízení o ochraně osobních údajů (GDPR).</p>
+        <p>Nemáme žádný backend, kde by se ukládaly uživatelské údaje. Jediná třetí strana, která v aplikaci získává údaje, je Google — pro zobrazení mapy a v bezplatné verzi pro reklamy. To je popsáno v sekcích 4 až 7.</p>
+      </section>
+      <section class="legal-section" id="gegevens">
+        <h2>2. Jaké údaje aplikace používá</h2>
+        <div class="table-scroll">
+        <table class="data-table">
+          <thead><tr><th>Údaj</th><th>Účel</th><th>Kde</th></tr></thead>
+          <tbody>
+<tr><td>GPX soubory a waypointy</td><td>Zobrazování tras a navigace</td><td class="tone-good">Jen v zařízení</td></tr>
+<tr><td>Průběh jednotlivých tras</td><td>Obnovení přerušené jízdy</td><td class="tone-good">Jen v zařízení</td></tr>
+<tr><td>Poloha (GPS)</td><td>Vzdálenost a směr k dalšímu bodu</td><td class="tone-good">Jen v operační paměti</td></tr>
+<tr><td>Nastavení a volba jazyka</td><td>Jednotky, jazyk, způsob dopravy, zobrazení mapy</td><td class="tone-good">Jen v zařízení</td></tr>
+<tr><td>Reklamní identifikátor a údaje o zařízení</td><td>Zobrazování reklam a předcházení podvodným kliknutím</td><td class="tone-warn">Google AdMob</td></tr>
+<tr><td>Tvoje volba souhlasu</td><td>Uložení toho, co jsi zvolil ohledně reklam</td><td class="tone-good">Jen v zařízení</td></tr>
+<tr><td>Nákup verze bez reklam</td><td>Vypnutí reklam a jejich obnovení na tvých zařízeních</td><td class="tone-warn">Apple nebo Google</td></tr>
+<tr><td>Hlášení o pádu aplikace (volitelné)</td><td>Oprava chyb</td><td class="tone-warn">Přes Apple nebo Google</td></tr>
+          </tbody>
+        </table>
+      </div>
+        <p>Sami nesbíráme tvoje jméno, e-mailovou adresu, telefonní číslo, kontakty ani historii jízd. Neexistuje registrace ani synchronizace s cloudem.</p>
+      </section>
+      <section class="legal-section" id="locatie">
+        <h2>3. Přístup k poloze</h2>
+        <p>Aplikace požádá o přístup k poloze až ve chvíli, kdy spustíš trasu — ne při prvním spuštění. Výchozí volba je <em>Při používání aplikace</em>. Tvoje poloha se používá výhradně k výpočtu vzdálenosti a směru k dalšímu waypointu a k zobrazení tvé pozice na mapě.</p>
+        <p>Údaje o poloze se nikdy nezapisují do souboru, nezaznamenávají se a nepřenášejí se. Jakmile navigaci ukončíš, zmizí z paměti.</p>
+        <div class="callout"><strong>Poloha na pozadí</strong> se vyžaduje jen tehdy, když chceš, aby navigace pokračovala i s vypnutou obrazovkou nebo při používání jiné aplikace. Pokud to odmítneš, aplikace dál plně funguje, dokud běží na popředí.</div>
+        <p>Tvoje poloha se <strong>ne</strong>předává reklamnímu modulu. AdMob od nás nedostává žádnou GPS pozici, žádné waypointy a žádné trasy.</p>
+      </section>
+      <section class="legal-section" id="advertenties">
+        <h2>4. Reklamy přes Google AdMob</h2>
+        <p>Bezplatná verze aplikace občas zobrazí <strong>celoobrazovkovou reklamu (interstitial)</strong>: reklamu na celou obrazovku v přirozeném klidovém okamžiku, například po dokončení trasy nebo mezi dvěma obrazovkami. Nikdy během navigace, nikdy přes mapu a nikdy na CarPlay nebo Android Auto. Tyto reklamy poskytuje Google AdMob (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irsko).</p>
+        <p>Aby mohl AdMob zobrazit reklamu, zpracovává údaje, které dostává přímo z tvého zařízení. Patří mezi ně:</p>
+        <ul class="legal-list">
+        <li><span class="legal-list__dot"></span><span>reklamní identifikátor tvého zařízení (IDFA na iOS, Advertising ID na Androidu), nebo bez souhlasu dočasný, neosobní identifikátor;</span></li>
+        <li><span class="legal-list__dot"></span><span>technické údaje o zařízení: model, operační systém, jazyk, velikost obrazovky a verze aplikace;</span></li>
+        <li><span class="legal-list__dot"></span><span>tvoje IP adresa, ze které Google odvozuje hrubou polohu na úrovni země nebo regionu — ne tvou GPS pozici;</span></li>
+        <li><span class="legal-list__dot"></span><span>údaje o samotné reklamě: zda byla načtena, zobrazena nebo klepnuta, částečně za účelem předcházení podvodným kliknutím.</span></li>
+      </ul>
+        <p>Google tyto údaje zpracovává jako samostatný správce podle svých vlastních podmínek. Od Googlu dostáváme jen agregované údaje o výnosech — žádné údaje o jednotlivých uživatelích. Viz <a href="https://policies.google.com/privacy" target="<em>blank" rel="noopener">zásady ochrany osobních údajů Google</a> a přehled <a href="https://support.google.com/admob/answer/9012903" target="</em>blank" rel="noopener">jak AdMob používá údaje</a>.</p>
+        <div class="callout"><strong>Co AdMob nikdy nedostane:</strong> tvoje GPX soubory, tvoje waypointy, tvoji GPS polohu, průběh tvé trasy ani názvy, které trasám dáváš. Tyto údaje nikdy neopustí chráněné úložiště aplikace.</div>
+      </section>
+      <section class="legal-section" id="toestemming">
+        <h2>5. Souhlas v EU a změna tvé volby</h2>
+        <p>Pokud se nacházíš v Evropském hospodářském prostoru, ve Spojeném království nebo ve Švýcarsku, zobrazí aplikace při prvním spuštění obrazovku souhlasu, ještě než je vyžádána jediná reklama. Tato obrazovka pochází z Google User Messaging Platform a řídí se rámcem IAB Transparency &amp; Consent Framework, jak vyžaduje GDPR a směrnice o soukromí a elektronických komunikacích (tzv. „cookie zákon“).</p>
+        <ul class="legal-list">
+        <li><span class="legal-list__dot"></span><span><strong>Pokud souhlasíš</strong>, Google a jeho reklamní partneři mohou tvůj reklamní identifikátor použít pro personalizované reklamy.</span></li>
+        <li><span class="legal-list__dot"></span><span><strong>Pokud odmítneš</strong>, aplikace dál plně funguje a uvidíš pouze nepersonalizované reklamy, vybrané na základě obsahu aplikace a tvého obecného regionu.</span></li>
+        <li><span class="legal-list__dot"></span><span><strong>Svou volbu můžeš kdykoli změnit</strong> přes <em>Nastavení → Soukromí → Nastavení reklam</em> v aplikaci. Tím se znovu otevře stejná obrazovka a přepíše se tvoje předchozí volba.</span></li>
+      </ul>
+        <p>Na iOS se systém navíc prostřednictvím App Tracking Transparency samostatně zeptá, zda může aplikace použít identifikátor tvého zařízení. Pokud to odmítneš, personalizovaná reklama je vyloučena bez ohledu na to, co zvolíš na obrazovce samotné aplikace.</p>
+        <p>Tvůj souhlas se ukládá lokálně ve tvém zařízení a předává se Googlu jako signál při každém požadavku na reklamu. Sami si z něj kopii neukládáme.</p>
+      </section>
+      <section class="legal-section" id="advertentievrij">
+        <h2>6. Nákup verze bez reklam</h2>
+        <p>Za jednorázovou platbu 2,99 € vypneš reklamy navždy. Poté už se reklamní modul znovu neinicializuje: na AdMob už není odesílán žádný požadavek a žádný reklamní identifikátor už se nevyžaduje.</p>
+        <p>Platba probíhá výhradně přes App Store nebo Google Play. Tvoje platební údaje nikdy nevidíme: transakci zpracovává Apple, respektive Google, a nám jen sdělí, že nákup je platný. Pro obnovení na jiném zařízení použij <em>Obnovit nákupy</em> přes svůj účet Apple nebo Google — účet u nás k tomu není potřeba.</p>
+        <p>Neexistuje předplatné ani automatické obnovování. Platí podmínky a právo na odstoupení od smlouvy obchodu, ve kterém jsi nákup provedl.</p>
+      </section>
+      <section class="legal-section" id="kaarten">
+        <h2>7. Mapy a další třetí strany</h2>
+        <p>Pro zobrazení mapy aplikace používá vlastní mapovou službu platformy: Apple Maps (MapKit) na iOS a Google Maps SDK na Androidu. Tyto služby načítají dlaždice mapy z vlastních serverů a při tom mohou získávat technické údaje, jako je oblast, kterou si zobrazuješ, a IP adresa tvého připojení. To se děje podle vlastních zásad ochrany osobních údajů Apple, respektive Google. My jim nepředáváme žádné trasy, waypointy ani údaje o jízdě.</p>
+        <p>Kromě mapové služby a AdMob aplikace neobsahuje žádná další SDK třetích stran: žádné analytické nástroje, žádný nástroj pro A/B testování, žádné přihlašování přes sociální sítě, žádné jiné reklamní sítě.</p>
+      </section>
+      <section class="legal-section" id="winkels">
+        <h2>8. App Store a Google Play</h2>
+        <p>Stahování a aktualizace aplikace probíhají přes App Store nebo Google Play. Apple a Google si při tom uchovávají vlastní údaje, jako je počet stažení a souhrnně pády aplikace a verze. Tyto údaje vidíme jen v agregované formě, nikdy dohledatelné ke konkrétní osobě.</p>
+        <p>Pokud jsi v nastavení svého zařízení zvolil sdílení diagnostických údajů s vývojářem, dostáváme hlášení o pádech přes Apple nebo Google. Hlášení o pádu obsahuje technické informace o zařízení a chybě — žádné trasy a žádnou polohu.</p>
+      </section>
+      <section class="legal-section" id="grondslag">
+        <h2>9. Právní základ a doba uchovávání</h2>
+        <ul class="legal-list">
+        <li><span class="legal-list__dot"></span><span><strong>Poloha při navigaci</strong> — plnění služby, o kterou jsi sám požádal; bez polohy nemůže aplikace určit vzdálenost k bodu.</span></li>
+        <li><span class="legal-list__dot"></span><span><strong>Personalizované reklamy</strong> — tvůj souhlas, který můžeš kdykoli odvolat (sekce 5).</span></li>
+        <li><span class="legal-list__dot"></span><span><strong>Nepersonalizované reklamy a předcházení podvodům</strong> — oprávněný zájem: možnost nabízet aplikaci zdarma a předcházet zneužití.</span></li>
+        <li><span class="legal-list__dot"></span><span><strong>Nákup verze bez reklam</strong> — plnění smlouvy a zákonná povinnost obchodu uchovávat údaje.</span></li>
+        <li><span class="legal-list__dot"></span><span><strong>Diagnostické údaje</strong> — tvůj souhlas udělený v nastavení zařízení.</span></li>
+      </ul>
+        <p>Trasy, průběh, nastavení a tvoje volba souhlasu jsou uloženy u tebe: zůstávají tam, dokud trasu nesmažeš nebo aplikaci neodstraníš ze svého zařízení. My žádnou vlastní dobu uchovávání neuplatňujeme, protože o tobě nic neukládáme.</p>
+        <p>Doby uchovávání reklamních údajů ze strany Google jsou stanoveny v zásadách ochrany osobních údajů Google. Při tomto zpracování mohou být údaje přenášeny mimo EHP; Google k tomu používá standardní smluvní doložky Evropské komise.</p>
+      </section>
+      <section class="legal-section" id="rechten">
+        <h2>10. Tvoje práva podle GDPR</h2>
+        <p>Máš právo na přístup, opravu, výmaz, omezení zpracování, přenositelnost a vznesení námitky. Protože o tobě sami neukládáme žádné údaje, uplatňuješ tato práva v praxi ve svém zařízení:</p>
+        <ul class="legal-list">
+        <li><span class="legal-list__dot"></span><span><strong>Přístup a přenositelnost</strong> — tvoje GPX soubory jsou uložené v aplikaci a můžeš je sdílet nebo exportovat přesně tak, jak jsi je načetl.</span></li>
+        <li><span class="legal-list__dot"></span><span><strong>Výmaz</strong> — smaž trasu v knihovně přejetím prstem, nebo odstraň aplikaci a vymažeš vše najednou.</span></li>
+        <li><span class="legal-list__dot"></span><span><strong>Námitka proti reklamám</strong> — odvolej souhlas v <em>Nastavení → Soukromí</em>, vypni reklamní identifikátor v nastavení zařízení, nebo si kup verzi bez reklam.</span></li>
+        <li><span class="legal-list__dot"></span><span><strong>Práva vůči Googlu</strong> — u údajů, které Google zpracovává jako samostatný správce, směřuj svůj požadavek přímo na Google.</span></li>
+      </ul>
+        <p>Máš otázky ohledně svých údajů? Napiš na <a href="mailto:privacy@gpxnavigator.com">privacy@gpxnavigator.com</a>; odpovíme do 30 dnů. Stížnost můžeš také kdykoli podat u nizozemského úřadu pro ochranu osobních údajů (Autoriteit Persoonsgegevens).</p>
+      </section>
+      <section class="legal-section" id="beveiliging">
+        <h2>11. Zabezpečení</h2>
+        <p>Tvoje trasy jsou uložené v chráněném úložišti aplikace, a proto se na ně vztahuje šifrování disku a zabezpečení přístupu tvého zařízení. Provoz směrem k mapové službě a k AdMob probíhá šifrovaně přes HTTPS. Protože nemáme žádný server ani účet, neexistuje žádné centrální místo, ze kterého by tvoje údaje mohly uniknout.</p>
+      </section>
+      <section class="legal-section" id="kinderen">
+        <h2>12. Děti</h2>
+        <p>Aplikace je určena dospělým cestovatelům a nezaměřuje se na děti. Vědomě neshromažďujeme údaje od dětí. Nastavení reklam v aplikaci je zvoleno tak, aby AdMob nemohl zobrazovat reklamy zaměřené na děti nebo pro děti nevhodné.</p>
+      </section>
+      <section class="legal-section" id="wijzigingen">
+        <h2>13. Změny</h2>
+        <p>Pokud se něco změní na tom, jak aplikace nakládá s údaji, tyto zásady aktualizujeme a zvýšíme číslo verze v horní části. U podstatné změny — například nové služby třetí strany nebo jiného formátu reklamy — na to upozorníme v aplikaci při prvním otevření po aktualizaci a v případě potřeby vyžádáme tvůj souhlas.</p>
+      </section>
+      <section class="legal-section" id="contact">
+        <h2>14. Kontakt</h2>
+        <div class="contact-grid">
+        <div>
+          <div class="contact-grid__label">Dotazy k soukromí</div>
+          <a href="mailto:privacy@gpxnavigator.com" class="contact-grid__value">privacy@gpxnavigator.com</a>
+        </div>
+        <div>
+          <div class="contact-grid__label">Podpora</div>
+          <a href="mailto:support@gpxnavigator.com" class="contact-grid__value">support@gpxnavigator.com</a>
+        </div>
+        <div>
+          <div class="contact-grid__label">Dozorový úřad</div>
+          <div class="contact-grid__value contact-grid__value--plain">Autoriteit Persoonsgegevens (nizozemský úřad pro ochranu osobních údajů), Haag</div>
+        </div>
+      </div>
+      </section>
+</div>
+
+<footer class="site-footer" style="padding:24px 0">
+  <div class="wrap wrap--narrow" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font:400 12px 'IBM Plex Sans';color:#7A8A9A">
+    <span>© 2026 GPX Navigator — gpxnavigator.com</span>
+    <span class="footer-bottom-links">
+      <a href="/cs/">Stránka produktu</a>
+      <a href="mailto:support@gpxnavigator.com">Kontakt</a>
+    </span>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GPX Navigator — A tua rota GPX, ponto a ponto. 100% gratuita.</title>
+<meta name="description" content="O GPX Navigator guia-te de ponto de passagem a ponto de passagem no teu ficheiro GPX — de moto, de carro, de bicicleta ou a pé. 100% gratuita, com CarPlay e Android Auto.">
+<link rel="canonical" href="https://gpxnavigator.com/pt/">
+  <link rel="alternate" hreflang="nl" href="https://gpxnavigator.com/nl/">
+  <link rel="alternate" hreflang="en" href="https://gpxnavigator.com/en/">
+  <link rel="alternate" hreflang="de" href="https://gpxnavigator.com/de/">
+  <link rel="alternate" hreflang="fr" href="https://gpxnavigator.com/fr/">
+  <link rel="alternate" hreflang="es" href="https://gpxnavigator.com/es/">
+  <link rel="alternate" hreflang="it" href="https://gpxnavigator.com/it/">
+  <link rel="alternate" hreflang="pt" href="https://gpxnavigator.com/pt/">
+  <link rel="alternate" hreflang="sv" href="https://gpxnavigator.com/sv/">
+  <link rel="alternate" hreflang="nb" href="https://gpxnavigator.com/nb/">
+  <link rel="alternate" hreflang="fi" href="https://gpxnavigator.com/fi/">
+  <link rel="alternate" hreflang="cs" href="https://gpxnavigator.com/cs/">
+  <link rel="alternate" hreflang="da" href="https://gpxnavigator.com/da/">
+<link rel="alternate" hreflang="x-default" href="https://gpxnavigator.com/nl/">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="logo-light" viewBox="0 0 100 100">
+      <rect width="100" height="100" fill="#FFFFFF"/>
+      <text x="50" y="52" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-weight="700" font-size="30" letter-spacing="-1" fill="#1C4480">GPX</text>
+      <path d="M18 72 C32 72 30 62 44 62 C58 62 60 70 76 70" fill="none" stroke="#1C4480" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="18" cy="72" r="6" fill="#1C4480"/>
+      <path d="M76 56 C82.6 56 87 60.8 87 66 C87 72.6 79.4 79.6 76 83 C72.6 79.6 65 72.6 65 66 C65 60.8 69.4 56 76 56 Z" fill="#E8A33D"/>
+      <circle cx="76" cy="66" r="4" fill="#FFFFFF"/>
+    </symbol>
+    <symbol id="mark-white" viewBox="0 0 100 44">
+      <path d="M8 30 C26 30 23 16 41 16 C59 16 62 26 82 26" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="8" cy="30" r="7" fill="#FFFFFF"/>
+      <path d="M82 6 C90.8 6 96 12.4 96 19.6 C96 28.4 86.4 37.8 82 42 C77.6 37.8 68 28.4 68 19.6 C68 12.4 73.2 6 82 6 Z" fill="#E8A33D"/>
+      <circle cx="82" cy="20" r="5" fill="#1A2332"/>
+    </symbol>
+  </defs>
+</svg>
+<nav class="site-nav">
+  <div class="site-nav__inner">
+    <a href="/pt/" class="brand">
+      <span class="brand__mark"><svg width="32" height="32"><use href="#logo-light"></use></svg></span>
+      <span class="brand__name">GPX Navigator</span>
+    </a>
+    <div class="nav-links">
+      <a href="#functies">Funcionalidades</a>
+      <a href="#werkwijze">Como funciona</a>
+      <a href="#carplay">Para quem</a>
+      <a href="#prijs">100% gratuito</a>
+    </div>
+    <div class="nav-spacer"></div>
+    <div class="lang-switch">
+      <button type="button" class="lang-switch__btn" aria-haspopup="listbox">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20"/></svg>
+        <span class="lang-switch__label">Português</span>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="lang-switch__menu" role="listbox">
+      <a class="lang-switch__item" href="/nl/">
+        <span class="lang-switch__item-code">nl</span>
+        <span class="lang-switch__item-name">Nederlands</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/en/">
+        <span class="lang-switch__item-code">en</span>
+        <span class="lang-switch__item-name">English</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/de/">
+        <span class="lang-switch__item-code">de</span>
+        <span class="lang-switch__item-name">Deutsch</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/fr/">
+        <span class="lang-switch__item-code">fr</span>
+        <span class="lang-switch__item-name">Français</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/es/">
+        <span class="lang-switch__item-code">es</span>
+        <span class="lang-switch__item-name">Español</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/it/">
+        <span class="lang-switch__item-code">it</span>
+        <span class="lang-switch__item-name">Italiano</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/pt/" aria-current="true">
+        <span class="lang-switch__item-code">pt</span>
+        <span class="lang-switch__item-name">Português</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1C4480" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      </a>
+      <a class="lang-switch__item" href="/sv/">
+        <span class="lang-switch__item-code">sv</span>
+        <span class="lang-switch__item-name">Svenska</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/nb/">
+        <span class="lang-switch__item-code">nb</span>
+        <span class="lang-switch__item-name">Norsk</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/fi/">
+        <span class="lang-switch__item-code">fi</span>
+        <span class="lang-switch__item-name">Suomi</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/cs/">
+        <span class="lang-switch__item-code">cs</span>
+        <span class="lang-switch__item-name">Čeština</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/da/">
+        <span class="lang-switch__item-code">da</span>
+        <span class="lang-switch__item-name">Dansk</span>
+        
+      </a>
+      </div>
+    </div>
+    <div class="nav-store">
+      <a href="https://apps.apple.com/" class="store-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.9-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.6 2.3 2.8 2.2 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.6-.9.9-1.7 1-2.1-.1 0-2.2-.9-2.2-3.2zM14.3 5.9c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z"/></svg>App Store</a>
+      <a href="https://play.google.com/" class="store-badge store-badge--google"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l9.1-9.1-9.1-10.3zm10.2 11.3L5.1 22.4c.4.1.9 0 1.4-.3l10.8-6.2-3.5-2.3zm4.7-3.1L16 8.9 6.5 1.9c-.5-.3-1-.4-1.4-.3l8.7 9.7 1.2-.8zm.6 3.5l2.2-1.3c.7-.4.7-1.4 0-1.8l-2.1-1.2-2.6 2.1 2.5 2.2z"/></svg>Google Play</a>
+    </div>
+<button type="button" class="nav-burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A5568" stroke-width="2" stroke-linecap="round"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg></button>
+  </div>
+  <div class="nav-mobile-panel">
+    <div class="nav-links">
+      <a href="#functies">Funcionalidades</a>
+      <a href="#werkwijze">Como funciona</a>
+      <a href="#carplay">Para quem</a>
+      <a href="#prijs">100% gratuito</a>
+    </div>
+    <div class="nav-store">
+      <a href="https://apps.apple.com/" class="store-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.9-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.6 2.3 2.8 2.2 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.6-.9.9-1.7 1-2.1-.1 0-2.2-.9-2.2-3.2zM14.3 5.9c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z"/></svg>App Store</a>
+      <a href="https://play.google.com/" class="store-badge store-badge--google"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l9.1-9.1-9.1-10.3zm10.2 11.3L5.1 22.4c.4.1.9 0 1.4-.3l10.8-6.2-3.5-2.3zm4.7-3.1L16 8.9 6.5 1.9c-.5-.3-1-.4-1.4-.3l8.7 9.7 1.2-.8zm.6 3.5l2.2-1.3c.7-.4.7-1.4 0-1.8l-2.1-1.2-2.6 2.1 2.5 2.2z"/></svg>Google Play</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero__top">
+      <div>
+        <div class="badge-row">
+          <span class="badge badge--free">100% gratuita</span>
+          <span class="badge badge--audience">Moto · carro · bicicleta · caminhada</span>
+        </div>
+        <h1>A tua rota GPX, ponto a ponto. <span class="green">100% gratuita.</span></h1>
+        <p class="hero__desc">Carrega um ficheiro GPX e parte à estrada. O GPX Navigator leva-te de ponto de passagem a ponto de passagem pela ordem em que aparecem no ficheiro — de moto, de carro, de bicicleta ou a pé. Todas as funcionalidades são gratuitas: sem subscrição, sem período de teste, sem conta.</p>
+        <div class="hero__ctas">
+          <a href="https://apps.apple.com/" class="store-cta">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.9-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.6 2.3 2.8 2.2 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.6-.9.9-1.7 1-2.1-.1 0-2.2-.9-2.2-3.2zM14.3 5.9c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z"/></svg>
+        <span class="store-cta__text">
+          <span class="store-cta__eyebrow">Transferir na</span>
+          <span class="store-cta__title">App Store</span>
+        </span>
+      </a>
+      <a href="https://play.google.com/" class="store-cta">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l9.1-9.1-9.1-10.3zm10.2 11.3L5.1 22.4c.4.1.9 0 1.4-.3l10.8-6.2-3.5-2.3zm4.7-3.1L16 8.9 6.5 1.9c-.5-.3-1-.4-1.4-.3l8.7 9.7 1.2-.8zm.6 3.5l2.2-1.3c.7-.4.7-1.4 0-1.8l-2.1-1.2-2.6 2.1 2.5 2.2z"/></svg>
+        <span class="store-cta__text">
+          <span class="store-cta__eyebrow">Disponível no</span>
+          <span class="store-cta__title">Google Play</span>
+        </span>
+      </a>
+        </div>
+        <ul class="checklist">
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2E7D5B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Todas as funcionalidades gratuitas</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2E7D5B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Sem necessidade de conta</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2E7D5B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Funciona offline</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2E7D5B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> 11 idiomas</li>
+        </ul>
+      </div>
+      <div class="hero__visual">
+        <div class="phone-frame">
+        <div class="phone-frame__island"></div>
+        <div class="phone-frame__screen">
+          <div class="phone-frame__statusrow">
+            <div class="phone-frame__point-label">Ponto 7 de 24</div>
+            <div class="phone-frame__gps"><span class="phone-frame__gps-dot"></span><span class="phone-frame__gps-text">GPS</span></div>
+          </div>
+          <div class="phone-frame__distance">
+            <div class="phone-frame__distance-num">1,4 km</div>
+            <div class="phone-frame__distance-to">até Brug Kootwijk</div>
+          </div>
+          <div class="phone-frame__map">
+            <svg viewBox="0 0 340 380" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M-20 300 C60 300 90 250 150 240 C210 230 240 150 200 90 C170 45 210 10 300 -10" fill="none" stroke="#3D6DB5" stroke-width="34" stroke-linecap="round" opacity=".35"/>
+  <path d="M-20 300 C60 300 90 250 150 240 C210 230 240 150 200 90 C170 45 210 10 300 -10" fill="none" stroke="#5B93E0" stroke-width="7" stroke-linecap="round" stroke-dasharray="14 12"/>
+  <circle cx="150" cy="240" r="12" fill="#E8A33D"/>
+  <circle cx="150" cy="240" r="5" fill="#1A2332"/>
+  <circle cx="200" cy="90" r="8" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="3"/>
+</svg>
+            <div class="phone-frame__coords">52.1421, 5.7688</div>
+          </div>
+          <div class="phone-frame__actions">
+            <div class="phone-frame__btn-reached"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C4480" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Alcançado</div>
+            <div class="phone-frame__btn-skip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#E8A33D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 1 0 8-8"/><path d="M12 4v5l4-2"/></svg>Saltar</div>
+          </div>
+        </div>
+        <div class="phone-frame__home-indicator"><span></span></div>
+      </div>
+      <div class="hero__caption">Pré-visualização — será substituída por capturas de ecrã reais.</div>
+      </div>
+    </div>
+
+    <div class="pricing-callout">
+      <div class="pricing-callout__left">
+        <span class="pricing-callout__icon">€0</span>
+        <div>
+          <div class="pricing-callout__title">A aplicação é 100% gratuita — todas as funcionalidades, rotas ilimitadas.</div>
+          <div class="pricing-callout__desc">Sem subscrição, sem período de teste, sem funcionalidades bloqueadas por um paywall. O anúncio ocasional cobre os custos; por 2,99 €, pagos uma única vez, desativas os anúncios para sempre.</div>
+        </div>
+      </div>
+      <a href="#prijs" class="pricing-callout__cta">Como a mantemos gratuita <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+    <div class="carplay-teaser" id="carplay-teaser">
+      <div>
+        <div class="carplay-teaser__eyebrow">CarPlay &amp; Android Auto</div>
+        <h2>O mesmo ponto, no ecrã do teu carro.</h2>
+        <p>Liga o teu telemóvel e a aplicação assume o ecrã do painel com o mapa, o próximo ponto e dois botões. Mais nada: sem menus, sem texto para ler enquanto conduzes.</p>
+      </div>
+      <div class="carplay-teaser__visual">
+        <div class="carplay-mock">
+        <div class="carplay-mock__inner">
+          <div class="carplay-mock__topbar">
+            <div class="carplay-mock__brand">
+              <svg width="34" height="15"><use href="#mark-white"></use></svg>
+              <span class="carplay-mock__label">Ponto 7 / 24</span>
+            </div>
+            <span class="carplay-mock__time">14:08</span>
+          </div>
+          <div class="carplay-mock__body">
+            <div class="carplay-mock__map">
+              <svg viewBox="0 0 360 186" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M-10 150 C70 148 100 112 170 100 C240 88 270 34 370 24" fill="none" stroke="#3D6DB5" stroke-width="28" stroke-linecap="round" opacity=".35"/>
+  <path d="M-10 150 C70 148 100 112 170 100 C240 88 270 34 370 24" fill="none" stroke="#5B93E0" stroke-width="6" stroke-linecap="round" stroke-dasharray="12 10"/>
+  <circle cx="170" cy="100" r="11" fill="#E8A33D"/>
+  <circle cx="170" cy="100" r="4.5" fill="#1A2332"/>
+  <circle cx="270" cy="42" r="7" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="2.5"/>
+</svg>
+              <div class="carplay-mock__coords">52.1421, 5.7688</div>
+            </div>
+            <div class="carplay-mock__side">
+              <div class="carplay-mock__next">
+                <div class="carplay-mock__next-label">Próximo ponto</div>
+                <div class="carplay-mock__next-dist">1,4 km</div>
+                <div class="carplay-mock__next-loc">Brug Kootwijk</div>
+              </div>
+              <div class="carplay-mock__reached"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C4480" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Alcançado</div>
+              <div class="carplay-mock__skip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#E8A33D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 1 0 8-8"/><path d="M12 4v5l4-2"/></svg>Saltar</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__caption">Pré-visualização — será substituída por uma captura de ecrã real do CarPlay.</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="functies">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Feito para a estrada, não para a mesa de trabalho.</h2>
+      <p>Uma única tarefa: levar-te até aos pontos da tua rota. Tudo o que não ajuda nisso não está aqui.</p>
+    </div>
+    <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span>
+          <h3>Cada GPX, sem alterações</h3>
+          <p>Partilha o teu ficheiro a partir do Mail, WhatsApp, Ficheiros ou Drive. Os pontos mantêm-se pela ordem em que aparecem no ficheiro — a aplicação nunca os reordena nem os recalcula.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+          <h3>Ponto a ponto</h3>
+          <p>Distância e direção até ao próximo ponto de passagem, em números que consegues ler em andamento e com luvas calçadas. Alcançado ou saltado: a aplicação avança.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg></span>
+          <h3>Para todas as formas de viajar</h3>
+          <p>Escolhe moto, carro, bicicleta ou caminhada. A aplicação ajusta o limiar de chegada, o zoom do mapa e as unidades — a mesma rota, medidas diferentes.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12" y2="20"/><path d="M3 3l18 18"/></svg></span>
+          <h3>Offline na estrada</h3>
+          <p>As rotas ficam guardadas no teu dispositivo. Sem cobertura, os pontos, as distâncias e as coordenadas continuam a funcionar — só os mosaicos do mapa esperam por ligação.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20"/></svg></span>
+          <h3>Onze idiomas</h3>
+          <p>A aplicação segue o idioma do teu dispositivo, ou escolhes um tu próprio. Do neerlandês e alemão ao checo, sueco e português.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+          <h3>A tua rota continua a ser tua</h3>
+          <p>Sem conta, sem nuvem, sem histórico de viagens num servidor. A tua localização nunca sai do teu dispositivo e nunca é usada para anúncios — consulta a <a href="/privacy/">política de privacidade</a>.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--bordered" id="werkwijze">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Do ficheiro à viagem em três passos.</h2>
+    </div>
+    <div class="step-grid">
+        <div class="step">
+          <span class="step__num">1</span>
+          <h3>Partilha o GPX com a aplicação</h3>
+          <p>Abre o ficheiro a partir do teu mail ou chat e escolhe GPX Navigator no menu de partilha. A rota fica de imediato na tua biblioteca, com nome, número de pontos e distância total.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">2</span>
+          <h3>Escolhe o teu meio de transporte</h3>
+          <p>Moto, carro, bicicleta ou caminhada. Verifica os pontos de passagem, dá à rota um nome que reconheças e confirma que os primeiros pontos estão corretos.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">3</span>
+          <h3>Inicia e parte à estrada</h3>
+          <p>Ao iniciares, a aplicação pede acesso à localização e muda para o modo de condução: números grandes, ecrã escuro, dois botões. Se parares a meio, retoma exatamente onde ficaste.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="carplay">
+  <div class="wrap carplay-cards">
+    <div class="info-card">
+      <span class="eyebrow-pill">Para quem é</span>
+      <h3>Voltas turísticas, passeios de um dia e rondas de inspeção.</h3>
+      <ul class="check-list">
+            <li><span class="check-list__mark"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Passeios de moto e rotas de carro que planeias sozinho ou com um clube</li>
+            <li><span class="check-list__mark"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Passeios de bicicleta e rotas de nós cicláveis a partir de um GPX de um posto de turismo</li>
+            <li><span class="check-list__mark"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Caminhadas por pontos fixos, mesmo sem cobertura na floresta</li>
+            <li><span class="check-list__mark"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Rondas de inspeção e manutenção por locais fixos</li>
+      </ul>
+      <div class="info-card__footnote">Não é para: navegação turn-by-turn baseada em endereços. Para isso, a tua aplicação de mapas habitual continua a ser mais adequada.</div>
+    </div>
+    <div class="info-card">
+      <span class="eyebrow-pill">Idiomas</span>
+      <h3>Na estrada em onze idiomas.</h3>
+      <p>A aplicação segue o idioma do teu dispositivo. Vais conduzir no estrangeiro com um telemóvel de outra pessoa? Define o idioma em separado nas Definições.</p>
+      <div class="chip-row">
+          <span class="chip"><span class="chip__code">nl</span>Nederlands</span>
+          <span class="chip"><span class="chip__code">en</span>English</span>
+          <span class="chip"><span class="chip__code">de</span>Deutsch</span>
+          <span class="chip"><span class="chip__code">fr</span>Français</span>
+          <span class="chip"><span class="chip__code">es</span>Español</span>
+          <span class="chip"><span class="chip__code">it</span>Italiano</span>
+          <span class="chip"><span class="chip__code">pt</span>Português</span>
+          <span class="chip"><span class="chip__code">sv</span>Svenska</span>
+          <span class="chip"><span class="chip__code">nb</span>Norsk</span>
+          <span class="chip"><span class="chip__code">fi</span>Suomi</span>
+          <span class="chip"><span class="chip__code">cs</span>Čeština</span>
+          <span class="chip"><span class="chip__code">da</span>Dansk</span>
+      </div>
+      <div class="info-card__footnote">Esta página está em português; escolhe outro idioma no canto superior direito.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--bordered" id="prijs">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>100% gratuita. E sem anúncios, se quiseres.</h2>
+      <p>Todas as funcionalidades estão incluídas na aplicação gratuita. Ocasionalmente aparece um anúncio entre dois ecrãs — isso cobre os custos dos mapas e do desenvolvimento. Não queres isso? Compra a remoção uma única vez.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price-card price-card--free">
+        <div class="price-card__row">
+          <div class="price-card__label">Gratuita</div>
+          <div class="price-card__badge">100% gratuita</div>
+        </div>
+        <div class="price-card__price">0 €</div>
+        <ul class="price-list">
+          <li><span class="price-list__mark"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Todas as funcionalidades, rotas ilimitadas</li>
+          <li><span class="price-list__mark"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>CarPlay e Android Auto</li>
+          <li><span class="price-list__mark"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Sem subscrição, sem conta</li>
+          <li><span class="price-list__mark price-list__mark--warn">!</span>Um anúncio ocasional entre ecrãs — nunca durante a navegação</li>
+        </ul>
+      </div>
+      <div class="price-card price-card--pro">
+        <div class="price-card__row">
+          <div class="price-card__label">Sem anúncios</div>
+          <div class="price-card__badge">Pagamento único</div>
+        </div>
+        <div class="price-card__price">2,99 €<span class="price-card__suffix">para sempre</span></div>
+        <ul class="price-list">
+          <li><span class="price-list__mark"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Tudo o que a aplicação gratuita oferece</li>
+          <li><span class="price-list__mark"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Nunca mais anúncios, em todos os teus dispositivos</li>
+          <li><span class="price-list__mark"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Pagas uma vez, sem renovação</li>
+          <li><span class="price-list__mark"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Recuperável através da tua conta da App Store ou Google</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pricing-footnote">Os anúncios são fornecidos pelo Google AdMob. Na UE, a aplicação pede primeiro a tua escolha sobre anúncios personalizados; a tua localização e as tuas rotas nunca são usadas para anúncios. Detalhes na <a href="/privacy/#advertenties">política de privacidade</a>.</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <h2 style="font:700 30px/1.15 'IBM Plex Sans';letter-spacing:-.015em;color:#1A2332;margin:0 0 28px">Perguntas frequentes</h2>
+    <div class="faq-list">
+        <div class="faq-item">
+          <h3>A aplicação segue a rota, ou apenas os pontos?</h3>
+          <p>Apenas os pontos, pela ordem em que aparecem no ficheiro. Vês a linha entre os pontos no mapa, mas a aplicação não te guia por uma estrada recalculada — tu escolhes como chegar ao próximo ponto.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Quando é que vejo um anúncio?</h3>
+          <p>Só num momento de pausa natural: depois de terminares uma rota, ou entre dois ecrãs. Nunca durante a navegação, nunca sobre o mapa, e nunca no CarPlay ou Android Auto. Por 2,99 € desativa-los uma vez, para sempre.</p>
+        </div>
+        <div class="faq-item">
+          <h3>A aplicação também funciona para bicicleta e caminhada?</h3>
+          <p>Sim. Escolhes o teu meio de transporte por rota; a aplicação ajusta em conformidade o limiar a partir do qual um ponto é considerado alcançado e o zoom do mapa. A pé esse limiar é pequeno; de moto é mais generoso.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Preciso de cobertura de rede?</h3>
+          <p>Não. Os pontos, as distâncias, a direção e as coordenadas vêm do teu dispositivo e do GPS. Só a imagem do mapa precisa de dados; sem cobertura, continuas a navegar pela lista de pontos e pela seta de direção.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Onde ficam os meus dados de viagem?</h3>
+          <p>No teu telemóvel. Não há conta nem servidor para onde as rotas ou localizações sejam enviadas. Consulta a <a href="/privacy/">política de privacidade</a> para a explicação completa.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-band">
+      <div class="cta-band__text">
+        <svg width="90" height="40" style="margin-bottom:18px"><use href="#mark-white"></use></svg>
+        <h2>Carrega a tua primeira rota.</h2>
+        <p>Gratuita e sem conta. Para moto, carro, bicicleta e caminhada, com CarPlay e Android Auto.</p>
+      </div>
+      <div class="cta-band__actions">
+        <a href="https://apps.apple.com/" class="store-cta">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.9-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.6 2.3 2.8 2.2 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.6-.9.9-1.7 1-2.1-.1 0-2.2-.9-2.2-3.2zM14.3 5.9c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z"/></svg>
+        <span class="store-cta__text">
+          <span class="store-cta__eyebrow">Transferir na</span>
+          <span class="store-cta__title">App Store</span>
+        </span>
+      </a>
+      <a href="https://play.google.com/" class="store-cta">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l9.1-9.1-9.1-10.3zm10.2 11.3L5.1 22.4c.4.1.9 0 1.4-.3l10.8-6.2-3.5-2.3zm4.7-3.1L16 8.9 6.5 1.9c-.5-.3-1-.4-1.4-.3l8.7 9.7 1.2-.8zm.6 3.5l2.2-1.3c.7-.4.7-1.4 0-1.8l-2.1-1.2-2.6 2.1 2.5 2.2z"/></svg>
+        <span class="store-cta__text">
+          <span class="store-cta__eyebrow">Disponível no</span>
+          <span class="store-cta__title">Google Play</span>
+        </span>
+      </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand__mark" style="width:26px;height:26px"><svg width="26" height="26"><use href="#logo-light"></use></svg></span>
+          <span class="name">GPX Navigator</span>
+        </div>
+        <p class="footer-desc">Navegação por pontos de passagem para moto, carro, bicicleta e caminhada. Feita nos Países Baixos.</p>
+        <p class="footer-domain"><a href="https://gpxnavigator.com">gpxnavigator.com</a></p>
+      </div>
+      <div>
+        <h5 class="footer-heading">Transferir</h5>
+        <ul class="footer-list">
+          <li><a href="https://apps.apple.com/">App Store (iOS)</a></li>
+          <li><a href="https://play.google.com/">Google Play (Android)</a></li>
+          <li><a href="#prijs">Preços e anúncios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="footer-heading">Suporte</h5>
+        <ul class="footer-list">
+          <li><a href="mailto:support@gpxnavigator.com">support@gpxnavigator.com</a></li>
+          <li><a href="#werkwijze">Como funciona</a></li>
+          <li><a href="#functies">Funcionalidades</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="footer-heading">Legal</h5>
+        <ul class="footer-list">
+          <li><a href="/pt/privacy/">Política de privacidade</a></li>
+          <li><a href="/pt/privacy/#advertenties">Anúncios e consentimento</a></li>
+          <li><a href="/pt/privacy/#rechten">Os teus direitos (RGPD)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GPX Navigator — gpxnavigator.com</span>
+      <span class="footer-bottom-links">
+        <a href="/pt/privacy/">Privacidade</a>
+        <a href="mailto:support@gpxnavigator.com">Contacto</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

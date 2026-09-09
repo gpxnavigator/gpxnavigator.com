@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GPX Navigator — Tvoje GPX trasa, bod po bodu. 100% zdarma.</title>
+<meta name="description" content="GPX Navigator tě provede od waypointu k waypointu ve tvém GPX souboru — na motorce, v autě, na kole nebo pěšky. 100% zdarma, s CarPlay a Android Auto.">
+<link rel="canonical" href="https://gpxnavigator.com/cs/">
+  <link rel="alternate" hreflang="nl" href="https://gpxnavigator.com/nl/">
+  <link rel="alternate" hreflang="en" href="https://gpxnavigator.com/en/">
+  <link rel="alternate" hreflang="de" href="https://gpxnavigator.com/de/">
+  <link rel="alternate" hreflang="fr" href="https://gpxnavigator.com/fr/">
+  <link rel="alternate" hreflang="es" href="https://gpxnavigator.com/es/">
+  <link rel="alternate" hreflang="it" href="https://gpxnavigator.com/it/">
+  <link rel="alternate" hreflang="pt" href="https://gpxnavigator.com/pt/">
+  <link rel="alternate" hreflang="sv" href="https://gpxnavigator.com/sv/">
+  <link rel="alternate" hreflang="nb" href="https://gpxnavigator.com/nb/">
+  <link rel="alternate" hreflang="fi" href="https://gpxnavigator.com/fi/">
+  <link rel="alternate" hreflang="cs" href="https://gpxnavigator.com/cs/">
+  <link rel="alternate" hreflang="da" href="https://gpxnavigator.com/da/">
+<link rel="alternate" hreflang="x-default" href="https://gpxnavigator.com/nl/">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="logo-light" viewBox="0 0 100 100">
+      <rect width="100" height="100" fill="#FFFFFF"/>
+      <text x="50" y="52" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-weight="700" font-size="30" letter-spacing="-1" fill="#1C4480">GPX</text>
+      <path d="M18 72 C32 72 30 62 44 62 C58 62 60 70 76 70" fill="none" stroke="#1C4480" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="18" cy="72" r="6" fill="#1C4480"/>
+      <path d="M76 56 C82.6 56 87 60.8 87 66 C87 72.6 79.4 79.6 76 83 C72.6 79.6 65 72.6 65 66 C65 60.8 69.4 56 76 56 Z" fill="#E8A33D"/>
+      <circle cx="76" cy="66" r="4" fill="#FFFFFF"/>
+    </symbol>
+    <symbol id="mark-white" viewBox="0 0 100 44">
+      <path d="M8 30 C26 30 23 16 41 16 C59 16 62 26 82 26" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="8" cy="30" r="7" fill="#FFFFFF"/>
+      <path d="M82 6 C90.8 6 96 12.4 96 19.6 C96 28.4 86.4 37.8 82 42 C77.6 37.8 68 28.4 68 19.6 C68 12.4 73.2 6 82 6 Z" fill="#E8A33D"/>
+      <circle cx="82" cy="20" r="5" fill="#1A2332"/>
+    </symbol>
+  </defs>
+</svg>
+<nav class="site-nav">
+  <div class="site-nav__inner">
+    <a href="/cs/" class="brand">
+      <span class="brand__mark"><svg width="32" height="32"><use href="#logo-light"></use></svg></span>
+      <span class="brand__name">GPX Navigator</span>
+    </a>
+    <div class="nav-links">
+      <a href="#functies">Funkce</a>
+      <a href="#werkwijze">Jak to funguje</a>
+      <a href="#carplay">Pro koho</a>
+      <a href="#prijs">100% zdarma</a>
+    </div>
+    <div class="nav-spacer"></div>
+    <div class="lang-switch">
+      <button type="button" class="lang-switch__btn" aria-haspopup="listbox">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20"/></svg>
+        <span class="lang-switch__label">Čeština</span>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="lang-switch__menu" role="listbox">
+      <a class="lang-switch__item" href="/nl/">
+        <span class="lang-switch__item-code">nl</span>
+        <span class="lang-switch__item-name">Nederlands</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/en/">
+        <span class="lang-switch__item-code">en</span>
+        <span class="lang-switch__item-name">English</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/de/">
+        <span class="lang-switch__item-code">de</span>
+        <span class="lang-switch__item-name">Deutsch</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/fr/">
+        <span class="lang-switch__item-code">fr</span>
+        <span class="lang-switch__item-name">Français</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/es/">
+        <span class="lang-switch__item-code">es</span>
+        <span class="lang-switch__item-name">Español</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/it/">
+        <span class="lang-switch__item-code">it</span>
+        <span class="lang-switch__item-name">Italiano</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/pt/">
+        <span class="lang-switch__item-code">pt</span>
+        <span class="lang-switch__item-name">Português</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/sv/">
+        <span class="lang-switch__item-code">sv</span>
+        <span class="lang-switch__item-name">Svenska</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/nb/">
+        <span class="lang-switch__item-code">nb</span>
+        <span class="lang-switch__item-name">Norsk</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/fi/">
+        <span class="lang-switch__item-code">fi</span>
+        <span class="lang-switch__item-name">Suomi</span>
+        
+      </a>
+      <a class="lang-switch__item" href="/cs/" aria-current="true">
+        <span class="lang-switch__item-code">cs</span>
+        <span class="lang-switch__item-name">Čeština</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1C4480" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      </a>
+      <a class="lang-switch__item" href="/da/">
+        <span class="lang-switch__item-code">da</span>
+        <span class="lang-switch__item-name">Dansk</span>
+        
+      </a>
+      </div>
+    </div>
+    <div class="nav-store">
+      <a href="https://apps.apple.com/" class="store-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.9-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.6 2.3 2.8 2.2 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.6-.9.9-1.7 1-2.1-.1 0-2.2-.9-2.2-3.2zM14.3 5.9c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z"/></svg>App Store</a>
+      <a href="https://play.google.com/" class="store-badge store-badge--google"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l9.1-9.1-9.1-10.3zm10.2 11.3L5.1 22.4c.4.1.9 0 1.4-.3l10.8-6.2-3.5-2.3zm4.7-3.1L16 8.9 6.5 1.9c-.5-.3-1-.4-1.4-.3l8.7 9.7 1.2-.8zm.6 3.5l2.2-1.3c.7-.4.7-1.4 0-1.8l-2.1-1.2-2.6 2.1 2.5 2.2z"/></svg>Google Play</a>
+    </div>
+<button type="button" class="nav-burger" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A5568" stroke-width="2" stroke-linecap="round"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg></button>
+  </div>
+  <div class="nav-mobile-panel">
+    <div class="nav-links">
+      <a href="#functies">Funkce</a>
+      <a href="#werkwijze">Jak to funguje</a>
+      <a href="#carplay">Pro koho</a>
+      <a href="#prijs">100% zdarma</a>
+    </div>
+    <div class="nav-store">
+      <a href="https://apps.apple.com/" class="store-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.9-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.6 2.3 2.8 2.2 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.6-.9.9-1.7 1-2.1-.1 0-2.2-.9-2.2-3.2zM14.3 5.9c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z"/></svg>App Store</a>
+      <a href="https://play.google.com/" class="store-badge store-badge--google"><svg width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l9.1-9.1-9.1-10.3zm10.2 11.3L5.1 22.4c.4.1.9 0 1.4-.3l10.8-6.2-3.5-2.3zm4.7-3.1L16 8.9 6.5 1.9c-.5-.3-1-.4-1.4-.3l8.7 9.7 1.2-.8zm.6 3.5l2.2-1.3c.7-.4.7-1.4 0-1.8l-2.1-1.2-2.6 2.1 2.5 2.2z"/></svg>Google Play</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero__top">
+      <div>
+        <div class="badge-row">
+          <span class="badge badge--free">100% zdarma</span>
+          <span class="badge badge--audience">Motorka · auto · kolo · turistika</span>
+        </div>
+        <h1>Tvoje GPX trasa, bod po bodu. <span class="green">100% zdarma.</span></h1>
+        <p class="hero__desc">Načti GPX soubor a vyraž na cestu. GPX Navigator tě provede od waypointu k waypointu v pořadí, v jakém jsou v souboru — na motorce, v autě, na kole nebo pěšky. Všechny funkce jsou zdarma: žádné předplatné, žádná zkušební verze, žádný účet.</p>
+        <div class="hero__ctas">
+          <a href="https://apps.apple.com/" class="store-cta">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.9-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.6 2.3 2.8 2.2 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.6-.9.9-1.7 1-2.1-.1 0-2.2-.9-2.2-3.2zM14.3 5.9c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z"/></svg>
+        <span class="store-cta__text">
+          <span class="store-cta__eyebrow">Stáhnout v</span>
+          <span class="store-cta__title">App Store</span>
+        </span>
+      </a>
+      <a href="https://play.google.com/" class="store-cta">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l9.1-9.1-9.1-10.3zm10.2 11.3L5.1 22.4c.4.1.9 0 1.4-.3l10.8-6.2-3.5-2.3zm4.7-3.1L16 8.9 6.5 1.9c-.5-.3-1-.4-1.4-.3l8.7 9.7 1.2-.8zm.6 3.5l2.2-1.3c.7-.4.7-1.4 0-1.8l-2.1-1.2-2.6 2.1 2.5 2.2z"/></svg>
+        <span class="store-cta__text">
+          <span class="store-cta__eyebrow">Získat na</span>
+          <span class="store-cta__title">Google Play</span>
+        </span>
+      </a>
+        </div>
+        <ul class="checklist">
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2E7D5B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Všechny funkce zdarma</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2E7D5B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Účet není potřeba</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2E7D5B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Funguje offline</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2E7D5B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> 11 jazyků</li>
+        </ul>
+      </div>
+      <div class="hero__visual">
+        <div class="phone-frame">
+        <div class="phone-frame__island"></div>
+        <div class="phone-frame__screen">
+          <div class="phone-frame__statusrow">
+            <div class="phone-frame__point-label">Bod 7 z 24</div>
+            <div class="phone-frame__gps"><span class="phone-frame__gps-dot"></span><span class="phone-frame__gps-text">GPS</span></div>
+          </div>
+          <div class="phone-frame__distance">
+            <div class="phone-frame__distance-num">1,4 km</div>
+            <div class="phone-frame__distance-to">do Brug Kootwijk</div>
+          </div>
+          <div class="phone-frame__map">
+            <svg viewBox="0 0 340 380" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M-20 300 C60 300 90 250 150 240 C210 230 240 150 200 90 C170 45 210 10 300 -10" fill="none" stroke="#3D6DB5" stroke-width="34" stroke-linecap="round" opacity=".35"/>
+  <path d="M-20 300 C60 300 90 250 150 240 C210 230 240 150 200 90 C170 45 210 10 300 -10" fill="none" stroke="#5B93E0" stroke-width="7" stroke-linecap="round" stroke-dasharray="14 12"/>
+  <circle cx="150" cy="240" r="12" fill="#E8A33D"/>
+  <circle cx="150" cy="240" r="5" fill="#1A2332"/>
+  <circle cx="200" cy="90" r="8" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="3"/>
+</svg>
+            <div class="phone-frame__coords">52.1421, 5.7688</div>
+          </div>
+          <div class="phone-frame__actions">
+            <div class="phone-frame__btn-reached"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C4480" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Dosaženo</div>
+            <div class="phone-frame__btn-skip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#E8A33D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 1 0 8-8"/><path d="M12 4v5l4-2"/></svg>Přeskočit</div>
+          </div>
+        </div>
+        <div class="phone-frame__home-indicator"><span></span></div>
+      </div>
+      <div class="hero__caption">Náhled — bude nahrazen skutečnými snímky obrazovky.</div>
+      </div>
+    </div>
+
+    <div class="pricing-callout">
+      <div class="pricing-callout__left">
+        <span class="pricing-callout__icon">€0</span>
+        <div>
+          <div class="pricing-callout__title">Aplikace je 100% zdarma — všechny funkce, neomezený počet tras.</div>
+          <div class="pricing-callout__desc">Žádné předplatné, žádná zkušební verze, žádné funkce zamčené za platbou. Občasná reklama kryje náklady; za 75 Kč jednorázově ji vypneš navždy.</div>
+        </div>
+      </div>
+      <a href="#prijs" class="pricing-callout__cta">Jak to udržujeme zdarma <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></a>
+    </div>
+
+    <div class="carplay-teaser" id="carplay-teaser">
+      <div>
+        <div class="carplay-teaser__eyebrow">CarPlay &amp; Android Auto</div>
+        <h2>Stejný bod, na obrazovce tvého auta.</h2>
+        <p>Připoj telefon a aplikace převezme displej palubní desky s mapou, dalším bodem a dvěma tlačítky. Nic víc: žádná menu, žádný text ke čtení za jízdy.</p>
+      </div>
+      <div class="carplay-teaser__visual">
+        <div class="carplay-mock">
+        <div class="carplay-mock__inner">
+          <div class="carplay-mock__topbar">
+            <div class="carplay-mock__brand">
+              <svg width="34" height="15"><use href="#mark-white"></use></svg>
+              <span class="carplay-mock__label">Bod 7 / 24</span>
+            </div>
+            <span class="carplay-mock__time">14:08</span>
+          </div>
+          <div class="carplay-mock__body">
+            <div class="carplay-mock__map">
+              <svg viewBox="0 0 360 186" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M-10 150 C70 148 100 112 170 100 C240 88 270 34 370 24" fill="none" stroke="#3D6DB5" stroke-width="28" stroke-linecap="round" opacity=".35"/>
+  <path d="M-10 150 C70 148 100 112 170 100 C240 88 270 34 370 24" fill="none" stroke="#5B93E0" stroke-width="6" stroke-linecap="round" stroke-dasharray="12 10"/>
+  <circle cx="170" cy="100" r="11" fill="#E8A33D"/>
+  <circle cx="170" cy="100" r="4.5" fill="#1A2332"/>
+  <circle cx="270" cy="42" r="7" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="2.5"/>
+</svg>
+              <div class="carplay-mock__coords">52.1421, 5.7688</div>
+            </div>
+            <div class="carplay-mock__side">
+              <div class="carplay-mock__next">
+                <div class="carplay-mock__next-label">Další bod</div>
+                <div class="carplay-mock__next-dist">1,4 km</div>
+                <div class="carplay-mock__next-loc">Brug Kootwijk</div>
+              </div>
+              <div class="carplay-mock__reached"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C4480" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Dosaženo</div>
+              <div class="carplay-mock__skip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#E8A33D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 1 0 8-8"/><path d="M12 4v5l4-2"/></svg>Přeskočit</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__caption">Náhled — bude nahrazen skutečným snímkem obrazovky CarPlay.</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="functies">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Vytvořeno pro cestu, ne pro stůl.</h2>
+      <p>Jeden úkol: dostat tě přes body tvé trasy. Cokoli, co k tomu nepřispívá, tu nenajdeš.</p>
+    </div>
+    <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span>
+          <h3>Každý GPX, beze změny</h3>
+          <p>Sdílej svůj soubor z mailu, WhatsAppu, Files nebo Drive. Body zůstávají v pořadí, v jakém jsou v souboru — aplikace je nikdy nepřeřazuje ani nepřepočítává.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+          <h3>Bod po bodu</h3>
+          <p>Vzdálenost a směr k dalšímu waypointu, v číslech, která přečteš i v rukavicích a za jízdy. Dosažený nebo přeskočený: aplikace jede dál.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg></span>
+          <h3>Pro každý způsob cestování</h3>
+          <p>Vyber motorku, auto, kolo nebo chůzi. Aplikace upraví práh dosažení bodu, přiblížení mapy a jednotky — stejná trasa, jiné měřítko.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12" y2="20"/><path d="M3 3l18 18"/></svg></span>
+          <h3>Offline na cestách</h3>
+          <p>Trasy jsou uložené v tvém telefonu. Bez signálu dál fungují body, vzdálenosti a souřadnice — jen dlaždice mapy čekají na připojení.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20"/></svg></span>
+          <h3>Jedenáct jazyků</h3>
+          <p>Aplikace se řídí jazykem tvého telefonu, nebo si jazyk zvolíš sám. Od nizozemštiny a němčiny až po češtinu, švédštinu a portugalštinu.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+          <h3>Tvoje trasa zůstává tvoje</h3>
+          <p>Žádný účet, žádný cloud, žádná historie jízd na serveru. Tvoje poloha nikdy neopustí tvé zařízení a nikdy se nepoužije pro reklamy — viz <a href="/privacy/">zásady ochrany osobních údajů</a>.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--bordered" id="werkwijze">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Od souboru k jízdě ve třech krocích.</h2>
+    </div>
+    <div class="step-grid">
+        <div class="step">
+          <span class="step__num">1</span>
+          <h3>Sdílej GPX s aplikací</h3>
+          <p>Otevři soubor z mailu nebo chatu a v nabídce sdílení vyber GPX Navigator. Trasa se hned objeví ve tvé knihovně, s názvem, počtem bodů a celkovou vzdáleností.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">2</span>
+          <h3>Zvol způsob dopravy</h3>
+          <p>Motorka, auto, kolo nebo chůze. Projdi waypointy, přejmenuj trasu na něco, co poznáš, a ověř, že první body vypadají správně.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">3</span>
+          <h3>Spusť a vyraž na cestu</h3>
+          <p>Aplikace si při spuštění vyžádá přístup k poloze a přepne do jízdního režimu: velká čísla, tmavá obrazovka, dvě tlačítka. Zastavíš uprostřed cesty a aplikace pokračuje přesně tam, kde jsi skončil.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="carplay">
+  <div class="wrap carplay-cards">
+    <div class="info-card">
+      <span class="eyebrow-pill">Pro koho</span>
+      <h3>Turistické jízdy, jednodenní výlety a kontrolní okruhy.</h3>
+      <ul class="check-list">
+            <li><span class="check-list__mark"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Motorkářské a autotrasy, které si naplánuješ sám nebo s klubem</li>
+            <li><span class="check-list__mark"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Cykloturistika a trasy uzlových bodů z GPX turistické organizace</li>
+            <li><span class="check-list__mark"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Pěší túry podél pevných bodů, i bez signálu v lese</li>
+            <li><span class="check-list__mark"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Kontrolní a servisní okruhy podél pevných lokací</li>
+      </ul>
+      <div class="info-card__footnote">Není pro: navigaci podle adres krok za krokem. Na to zůstává lepší tvoje stávající mapová aplikace.</div>
+    </div>
+    <div class="info-card">
+      <span class="eyebrow-pill">Jazyky</span>
+      <h3>Na cestách v jedenácti jazycích.</h3>
+      <p>Aplikace se řídí jazykem tvého telefonu. Jedeš v zahraničí s vypůjčeným telefonem? Nastav jazyk samostatně v Nastavení.</p>
+      <div class="chip-row">
+          <span class="chip"><span class="chip__code">nl</span>Nederlands</span>
+          <span class="chip"><span class="chip__code">en</span>English</span>
+          <span class="chip"><span class="chip__code">de</span>Deutsch</span>
+          <span class="chip"><span class="chip__code">fr</span>Français</span>
+          <span class="chip"><span class="chip__code">es</span>Español</span>
+          <span class="chip"><span class="chip__code">it</span>Italiano</span>
+          <span class="chip"><span class="chip__code">pt</span>Português</span>
+          <span class="chip"><span class="chip__code">sv</span>Svenska</span>
+          <span class="chip"><span class="chip__code">nb</span>Norsk</span>
+          <span class="chip"><span class="chip__code">fi</span>Suomi</span>
+          <span class="chip"><span class="chip__code">cs</span>Čeština</span>
+          <span class="chip"><span class="chip__code">da</span>Dansk</span>
+      </div>
+      <div class="info-card__footnote">Tato stránka je v češtině; jiný jazyk zvolíš vpravo nahoře.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--bordered" id="prijs">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>100% zdarma. A bez reklam, pokud chceš.</h2>
+      <p>Všechny funkce najdeš v bezplatné aplikaci. Občas se mezi dvěma obrazovkami objeví reklama — ta kryje náklady na mapy a vývoj. Nechceš to? Jednou provždy si to odkoupíš.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price-card price-card--free">
+        <div class="price-card__row">
+          <div class="price-card__label">Zdarma</div>
+          <div class="price-card__badge">100% zdarma</div>
+        </div>
+        <div class="price-card__price">0 €</div>
+        <ul class="price-list">
+          <li><span class="price-list__mark"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Všechny funkce, neomezený počet tras</li>
+          <li><span class="price-list__mark"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>CarPlay a Android Auto</li>
+          <li><span class="price-list__mark"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Žádné předplatné, žádný účet</li>
+          <li><span class="price-list__mark price-list__mark--warn">!</span>Občasná reklama mezi obrazovkami — nikdy během navigace</li>
+        </ul>
+      </div>
+      <div class="price-card price-card--pro">
+        <div class="price-card__row">
+          <div class="price-card__label">Bez reklam</div>
+          <div class="price-card__badge">Jednorázově</div>
+        </div>
+        <div class="price-card__price">75 Kč<span class="price-card__suffix">navždy</span></div>
+        <ul class="price-list">
+          <li><span class="price-list__mark"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Vše z bezplatné aplikace</li>
+          <li><span class="price-list__mark"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Už žádné reklamy, na všech tvých zařízeních</li>
+          <li><span class="price-list__mark"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Zaplatíš jednou, žádné obnovování</li>
+          <li><span class="price-list__mark"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>Obnovitelné přes tvůj účet App Store nebo Google</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pricing-footnote">Reklamy pocházejí od Google AdMob. V rámci EU se tě aplikace nejprve zeptá na tvou volbu ohledně personalizovaných reklam; tvoje poloha a trasy se pro reklamy nikdy nepoužívají. Podrobnosti v <a href="/privacy/#advertenties">zásadách ochrany osobních údajů</a>.</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <h2 style="font:700 30px/1.15 'IBM Plex Sans';letter-spacing:-.015em;color:#1A2332;margin:0 0 28px">Často kladené otázky</h2>
+    <div class="faq-list">
+        <div class="faq-item">
+          <h3>Sleduje aplikace trasu, nebo jen body?</h3>
+          <p>Jen body, v pořadí, v jakém jsou v souboru. Na mapě uvidíš čáru mezi body, ale aplikace tě nevede po přepočítané silnici — sám si vybíráš, jak se k dalšímu bodu dostaneš.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Kdy uvidím reklamu?</h3>
+          <p>Jen v přirozeném klidovém okamžiku: po dokončení trasy nebo mezi dvěma obrazovkami. Nikdy během navigace, nikdy přes mapu a nikdy na CarPlay nebo Android Auto. Za 75 Kč je jednou a navždy vypneš.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Funguje aplikace i pro cyklistiku a chůzi?</h3>
+          <p>Ano. Způsob dopravy volíš pro každou trasu; aplikace podle toho upraví práh, od kterého se bod počítá jako dosažený, a přiblížení mapy. Pěšky je tento práh malý, na motorce větší.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Potřebuju signál?</h3>
+          <p>Ne. Body, vzdálenosti, směr a souřadnice pocházejí z tvého telefonu a GPS. Data potřebuje jen obraz mapy; bez signálu dál naviguješ podle seznamu bodů a směrové šipky.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Kde zůstávají moje údaje o jízdě?</h3>
+          <p>Ve tvém telefonu. Neexistuje účet ani server, kam by trasy nebo poloha putovaly. Úplné vysvětlení najdeš v <a href="/privacy/">zásadách ochrany osobních údajů</a>.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-band">
+      <div class="cta-band__text">
+        <svg width="90" height="40" style="margin-bottom:18px"><use href="#mark-white"></use></svg>
+        <h2>Načti svou první trasu.</h2>
+        <p>Zdarma a bez účtu. Pro motorku, auto, kolo i chůzi, s CarPlay a Android Auto.</p>
+      </div>
+      <div class="cta-band__actions">
+        <a href="https://apps.apple.com/" class="store-cta">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M16.4 12.7c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.7-.8-2.9-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.6 2.3 2.8 2.2 1.1 0 1.5-.7 2.9-.7 1.3 0 1.7.7 2.9.7 1.2 0 2-1.1 2.7-2.2.6-.9.9-1.7 1-2.1-.1 0-2.2-.9-2.2-3.2zM14.3 5.9c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.6.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z"/></svg>
+        <span class="store-cta__text">
+          <span class="store-cta__eyebrow">Stáhnout v</span>
+          <span class="store-cta__title">App Store</span>
+        </span>
+      </a>
+      <a href="https://play.google.com/" class="store-cta">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l9.1-9.1-9.1-10.3zm10.2 11.3L5.1 22.4c.4.1.9 0 1.4-.3l10.8-6.2-3.5-2.3zm4.7-3.1L16 8.9 6.5 1.9c-.5-.3-1-.4-1.4-.3l8.7 9.7 1.2-.8zm.6 3.5l2.2-1.3c.7-.4.7-1.4 0-1.8l-2.1-1.2-2.6 2.1 2.5 2.2z"/></svg>
+        <span class="store-cta__text">
+          <span class="store-cta__eyebrow">Získat na</span>
+          <span class="store-cta__title">Google Play</span>
+        </span>
+      </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand__mark" style="width:26px;height:26px"><svg width="26" height="26"><use href="#logo-light"></use></svg></span>
+          <span class="name">GPX Navigator</span>
+        </div>
+        <p class="footer-desc">Navigace podle waypointů pro motorku, auto, kolo a chůzi. Vyrobeno v Nizozemsku.</p>
+        <p class="footer-domain"><a href="https://gpxnavigator.com">gpxnavigator.com</a></p>
+      </div>
+      <div>
+        <h5 class="footer-heading">Stáhnout</h5>
+        <ul class="footer-list">
+          <li><a href="https://apps.apple.com/">App Store (iOS)</a></li>
+          <li><a href="https://play.google.com/">Google Play (Android)</a></li>
+          <li><a href="#prijs">Ceník a reklamy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="footer-heading">Podpora</h5>
+        <ul class="footer-list">
+          <li><a href="mailto:support@gpxnavigator.com">support@gpxnavigator.com</a></li>
+          <li><a href="#werkwijze">Jak to funguje</a></li>
+          <li><a href="#functies">Funkce</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="footer-heading">Právní informace</h5>
+        <ul class="footer-list">
+          <li><a href="/cs/privacy/">Zásady ochrany osobních údajů</a></li>
+          <li><a href="/cs/privacy/#advertenties">Reklamy a souhlas</a></li>
+          <li><a href="/cs/privacy/#rechten">Tvoje práva (GDPR)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 GPX Navigator — gpxnavigator.com</span>
+      <span class="footer-bottom-links">
+        <a href="/cs/privacy/">Soukromí</a>
+        <a href="mailto:support@gpxnavigator.com">Kontakt</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

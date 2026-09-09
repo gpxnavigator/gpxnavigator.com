@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="0; url=/nl/">
+<title>GPX Navigator</title>
+<script>
+(function () {
+  var supported = ["nl","en","de","fr","es","it","pt","sv","nb","fi","cs","da"];
+  var pick = "nl";
+  var langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || "nl"];
+  for (var i = 0; i < langs.length; i++) {
+    var code = String(langs[i]).slice(0, 2).toLowerCase();
+    if (code === "nb" || code === "no") { pick = "nb"; break; }
+    if (supported.indexOf(code) !== -1) { pick = code; break; }
+  }
+  location.replace("/" + pick + "/");
+})();
+</script>
+</head>
+<body>
+<p><a href="/nl/">Doorgaan naar GPX Navigator</a></p>
+</body>
+</html>

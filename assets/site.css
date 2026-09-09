@@ -112,7 +112,7 @@ img, svg { display: block; max-width: 100%; }
   display: inline-flex; align-items: center; gap: 11px; padding: 13px 22px 13px 18px; border-radius: 8px;
   background: var(--navy); color: #fff; text-decoration: none; transition: .12s cubic-bezier(.2,.8,.2,1);
 }
-.store-cta:hover { background: var(--navy-dark); text-decoration: none; }
+.store-cta:hover { background: var(--navy-dark); text-decoration: none; color: var(--amber); }
 .store-cta--light { background: #fff; color: var(--blue); }
 .store-cta--light:hover { background: var(--blue-bg); }
 .store-cta--outline { background: transparent; border: 1px solid rgba(255,255,255,.45); color: #fff; }
@@ -283,6 +283,7 @@ img, svg { display: block; max-width: 100%; }
 .price-list__mark { width: 19px; height: 19px; border-radius: 999px; background: var(--blue-bg); color: var(--blue); display: inline-flex; align-items: center; justify-content: center; flex: none; margin-top: 1px; }
 .price-list__mark--warn { background: var(--amber-bg); color: var(--amber-text); font: 600 11px "IBM Plex Mono"; }
 .price-card--pro .price-list__mark { background: rgba(255,255,255,.18); color: #fff; }
+.price-card--pro li { color: #fff; }
 .pricing-footnote { max-width: 820px; margin: 20px auto 0; font: 400 13px/1.6 "IBM Plex Sans"; color: var(--text-muted); text-align: center; }
 
 /* ---------- FAQ ---------- */
